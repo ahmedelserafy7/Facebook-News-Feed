@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F1AC9161F29DF690024F062 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1AC9151F29DF690024F062 /* AppDelegate.swift */; };
+		1F1AC9181F29DF690024F062 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1AC9171F29DF690024F062 /* ViewController.swift */; };
+		1F1AC91B1F29DF6A0024F062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F1AC9191F29DF6A0024F062 /* Main.storyboard */; };
+		1F1AC91E1F29DF6A0024F062 /* Facebook_NewsFeed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F1AC91C1F29DF6A0024F062 /* Facebook_NewsFeed.xcdatamodeld */; };
+		1F1AC9201F29DF6A0024F062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F1AC91F1F29DF6A0024F062 /* Assets.xcassets */; };
+		1F1AC9231F29DF6B0024F062 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F1AC9211F29DF6B0024F062 /* LaunchScreen.storyboard */; };
+		1F3616881F3A79B9002F2FB3 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3616871F3A79B9002F2FB3 /* Posts.swift */; };
+		1FBC41621F34E7420008F5A4 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBC41611F34E7420008F5A4 /* FeedCell.swift */; };
+		1FBC41641F3512600008F5A4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBC41631F3512600008F5A4 /* Extensions.swift */; };
+		1FC5B5CD1F3CE0430062AE72 /* tabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC5B5CC1F3CE0430062AE72 /* tabBarController.swift */; };
+		1FC5B5CF1F3D2B6F0062AE72 /* FirendsRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC5B5CE1F3D2B6F0062AE72 /* FirendsRequests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F1AC9121F29DF680024F062 /* Facebook_NewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facebook_NewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F1AC9151F29DF690024F062 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F1AC9171F29DF690024F062 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F1AC91A1F29DF6A0024F062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F1AC91D1F29DF6A0024F062 /* Facebook_NewsFeed.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Facebook_NewsFeed.xcdatamodel; sourceTree = "<group>"; };
+		1F1AC91F1F29DF6A0024F062 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F1AC9221F29DF6B0024F062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F1AC9241F29DF6B0024F062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F3616871F3A79B9002F2FB3 /* Posts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		1FBC41611F34E7420008F5A4 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		1FBC41631F3512600008F5A4 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1FC5B5CC1F3CE0430062AE72 /* tabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabBarController.swift; sourceTree = "<group>"; };
+		1FC5B5CE1F3D2B6F0062AE72 /* FirendsRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirendsRequests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F1AC90F1F29DF680024F062 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F1AC9091F29DF680024F062 = {
+			isa = PBXGroup;
+			children = (
+				1F1AC9141F29DF690024F062 /* Facebook_NewsFeed */,
+				1F1AC9131F29DF680024F062 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F1AC9131F29DF680024F062 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F1AC9121F29DF680024F062 /* Facebook_NewsFeed.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F1AC9141F29DF690024F062 /* Facebook_NewsFeed */ = {
+			isa = PBXGroup;
+			children = (
+				1F1AC9151F29DF690024F062 /* AppDelegate.swift */,
+				1F1AC9171F29DF690024F062 /* ViewController.swift */,
+				1FBC41611F34E7420008F5A4 /* FeedCell.swift */,
+				1FC5B5CC1F3CE0430062AE72 /* tabBarController.swift */,
+				1FC5B5CE1F3D2B6F0062AE72 /* FirendsRequests.swift */,
+				1F3616871F3A79B9002F2FB3 /* Posts.swift */,
+				1FBC41631F3512600008F5A4 /* Extensions.swift */,
+				1F1AC9191F29DF6A0024F062 /* Main.storyboard */,
+				1F1AC91F1F29DF6A0024F062 /* Assets.xcassets */,
+				1F1AC9211F29DF6B0024F062 /* LaunchScreen.storyboard */,
+				1F1AC9241F29DF6B0024F062 /* Info.plist */,
+				1F1AC91C1F29DF6A0024F062 /* Facebook_NewsFeed.xcdatamodeld */,
+			);
+			path = Facebook_NewsFeed;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F1AC9111F29DF680024F062 /* Facebook_NewsFeed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F1AC9271F29DF6B0024F062 /* Build configuration list for PBXNativeTarget "Facebook_NewsFeed" */;
+			buildPhases = (
+				1F1AC90E1F29DF680024F062 /* Sources */,
+				1F1AC90F1F29DF680024F062 /* Frameworks */,
+				1F1AC9101F29DF680024F062 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Facebook_NewsFeed;
+			productName = Facebook_NewsFeed;
+			productReference = 1F1AC9121F29DF680024F062 /* Facebook_NewsFeed.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F1AC90A1F29DF680024F062 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Ahmed.S.Elserafy;
+				TargetAttributes = {
+					1F1AC9111F29DF680024F062 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = WY4TJYTZW4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1F1AC90D1F29DF680024F062 /* Build configuration list for PBXProject "Facebook_NewsFeed" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F1AC9091F29DF680024F062;
+			productRefGroup = 1F1AC9131F29DF680024F062 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F1AC9111F29DF680024F062 /* Facebook_NewsFeed */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F1AC9101F29DF680024F062 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F1AC9231F29DF6B0024F062 /* LaunchScreen.storyboard in Resources */,
+				1F1AC9201F29DF6A0024F062 /* Assets.xcassets in Resources */,
+				1F1AC91B1F29DF6A0024F062 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F1AC90E1F29DF680024F062 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FC5B5CF1F3D2B6F0062AE72 /* FirendsRequests.swift in Sources */,
+				1FBC41641F3512600008F5A4 /* Extensions.swift in Sources */,
+				1FC5B5CD1F3CE0430062AE72 /* tabBarController.swift in Sources */,
+				1F3616881F3A79B9002F2FB3 /* Posts.swift in Sources */,
+				1F1AC9181F29DF690024F062 /* ViewController.swift in Sources */,
+				1FBC41621F34E7420008F5A4 /* FeedCell.swift in Sources */,
+				1F1AC91E1F29DF6A0024F062 /* Facebook_NewsFeed.xcdatamodeld in Sources */,
+				1F1AC9161F29DF690024F062 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1F1AC9191F29DF6A0024F062 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F1AC91A1F29DF6A0024F062 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F1AC9211F29DF6B0024F062 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F1AC9221F29DF6B0024F062 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F1AC9251F29DF6B0024F062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F1AC9261F29DF6B0024F062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F1AC9281F29DF6B0024F062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WY4TJYTZW4;
+				INFOPLIST_FILE = Facebook_NewsFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AhmedElserafy.Facebook-NewsFeed";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1F1AC9291F29DF6B0024F062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WY4TJYTZW4;
+				INFOPLIST_FILE = Facebook_NewsFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AhmedElserafy.Facebook-NewsFeed";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F1AC90D1F29DF680024F062 /* Build configuration list for PBXProject "Facebook_NewsFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F1AC9251F29DF6B0024F062 /* Debug */,
+				1F1AC9261F29DF6B0024F062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F1AC9271F29DF6B0024F062 /* Build configuration list for PBXNativeTarget "Facebook_NewsFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F1AC9281F29DF6B0024F062 /* Debug */,
+				1F1AC9291F29DF6B0024F062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1F1AC91C1F29DF6A0024F062 /* Facebook_NewsFeed.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1F1AC91D1F29DF6A0024F062 /* Facebook_NewsFeed.xcdatamodel */,
+			);
+			currentVersion = 1F1AC91D1F29DF6A0024F062 /* Facebook_NewsFeed.xcdatamodel */;
+			path = Facebook_NewsFeed.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1F1AC90A1F29DF680024F062 /* Project object */;
+}
