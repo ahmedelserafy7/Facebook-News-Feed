@@ -44,7 +44,7 @@ class FriendRequestsController: UITableViewController {
             cell.requestImageView.image = UIImage(named: "steve_profile")
         } else {
             cell.nameLabel.text = "Mahatma Gandhi"
-            cell.requestImageView.image = UIImage(named: "gandhi_profile")
+            cell.requestImageView.image = UIImage(named: "gandhi")
         }
         
         cell.imageView?.backgroundColor = UIColor.black
@@ -109,7 +109,7 @@ class RequestHeader: UITableViewHeaderFooterView {
 
 class FriendRequestCell: UITableViewCell {
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupViews()
     }
@@ -135,8 +135,8 @@ class FriendRequestCell: UITableViewCell {
     
     let confirmButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Confirm", for: UIControlState())
-        button.setTitleColor(UIColor.white, for: UIControlState())
+        button.setTitle("Confirm", for: UIControl.State())
+        button.setTitleColor(UIColor.white, for: UIControl.State())
         button.backgroundColor = UIColor.rbg(red: 87, green: 143, blue: 255)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 10)
         button.layer.cornerRadius = 2
@@ -145,8 +145,8 @@ class FriendRequestCell: UITableViewCell {
     
     let deleteButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Delete", for: UIControlState())
-        button.setTitleColor(UIColor(white: 0.3, alpha: 1), for: UIControlState())
+        button.setTitle("Delete", for: UIControl.State())
+        button.setTitleColor(UIColor(white: 0.3, alpha: 1), for: UIControl.State())
         button.layer.cornerRadius = 2
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor(white: 0.7, alpha: 1).cgColor

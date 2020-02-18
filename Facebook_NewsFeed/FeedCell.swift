@@ -14,7 +14,7 @@ class FeedCell: UICollectionViewCell {
    
     var feedController = FeedController()
     
-    func animation() {
+    @objc func animation() {
         
         feedController.animateWithImageView(imageView: postImageView)
     }
@@ -89,15 +89,15 @@ class FeedCell: UICollectionViewCell {
     
     private func setupLabelsWithName() {
         
-        let attributedText = NSMutableAttributedString(string: (post?.name)!, attributes: [NSFontAttributeName: UIFont.boldSystemFont(ofSize: 14)])
+        let attributedText = NSMutableAttributedString(string: (post?.name)!, attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14)])
         
-        attributedText.append(NSAttributedString(string: "\nDecember 18 • San Francisco • ", attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 12), NSForegroundColorAttributeName: UIColor.rbg(red: 155, green: 161, blue: 171)]))
+        attributedText.append(NSAttributedString(string: "\nDecember 18 • San Francisco • ", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12), NSAttributedString.Key.foregroundColor: UIColor.rbg(red: 155, green: 161, blue: 171)]))
         
         
         let paragraghStyle = NSMutableParagraphStyle()
         paragraghStyle.lineSpacing = 4
         // attributedText.string.charcters.count means use the enitre attributed text(count the every little charcter)
-        attributedText.addAttribute(NSParagraphStyleAttributeName, value: paragraghStyle, range: NSMakeRange(0, attributedText.string.characters.count))
+        attributedText.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraghStyle, range: NSMakeRange(0, attributedText.string.count))
         
         let attachment = NSTextAttachment()
         attachment.image = UIImage(named: "globe_small")
@@ -135,7 +135,9 @@ class FeedCell: UICollectionViewCell {
         let textView = UITextView()
         textView.text = "Meanwhile, Beast turned to the dark side."
         textView.font = UIFont.systemFont(ofSize: 14)
+        textView.isUserInteractionEnabled = false
         textView.isScrollEnabled = false
+        textView.isEditable = false
         return textView
     }()
     let postImageView: UIImageView = {
@@ -170,7 +172,7 @@ class FeedCell: UICollectionViewCell {
         button.setTitle(title, for: .normal)
         button.setTitleColor(UIColor.rbg(red: 143, green: 158, blue: 163), for: .normal)
         button.setImage(UIImage(named:image), for: .normal)
-        button.titleEdgeInsets = UIEdgeInsetsMake(0, 8, 0, 0)
+        button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 0)
         return button
     }
     

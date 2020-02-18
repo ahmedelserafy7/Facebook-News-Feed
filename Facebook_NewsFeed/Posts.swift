@@ -34,7 +34,7 @@ class Post {
         stevePost.statusText = "Most people make the mistake of thinking design is what it looks like.\n" + "\nPeople think it’s this veneer – that the designers are handed this box and told, “Make it look good!” That’s not what we think design is.\n" + "It’s not just what it looks like and feels like." + "\nDesign is how it works."
         stevePost.profileImageName = "steve_profile"
         stevePost.statusImage = "steve_status"
-        stevePost.statusImageUrl = "https://fortunedotcom.files.wordpress.com/2015/09/steve-jobs.jpg"
+        stevePost.statusImageUrl = "https://static.arageek.com/wp-content/uploads/steve-jobs.jpg"
         stevePost.likes = 3.4
         stevePost.comments = 105.965
         posts.append(stevePost)

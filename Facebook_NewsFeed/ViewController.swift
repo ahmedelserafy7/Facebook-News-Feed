@@ -55,7 +55,7 @@ class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLa
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         if let statusPost = posts[indexPath.item].statusText {
-            let rect = NSString(string: statusPost).boundingRect(with: CGSize(width: view.frame.size.width - 8 - 4, height: 1000), options: NSStringDrawingOptions.usesFontLeading.union(NSStringDrawingOptions.usesLineFragmentOrigin), attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 14)], context: nil)
+            let rect = NSString(string: statusPost).boundingRect(with: CGSize(width: view.frame.size.width - 8 - 4, height: 1000), options: NSStringDrawingOptions.usesFontLeading.union(NSStringDrawingOptions.usesLineFragmentOrigin), attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14)], context: nil)
             
             let knownValues: CGFloat = 12 + 44 + 4 + 1 + 200 + 8 + 20 + 8 + 0.4 + 8 + 24 + 8 + 0.4 + 4 + 24 + 22
             return CGSize(width: view.frame.size.width, height: rect.height + knownValues)
@@ -63,6 +63,7 @@ class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLa
         
         return CGSize(width: view.frame.width, height:500)
     }
+    
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         // When u change the size of the device, just invalidate layout and redraw yourself completely
@@ -87,19 +88,19 @@ class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLa
         if let keyWindow = UIApplication.shared.keyWindow {
             // navBar
         navBarCoverView.backgroundColor = .black
-        navBarCoverView.frame = CGRect(x: 0, y: 0, width: 1000, height: 20 + 44)
+        navBarCoverView.frame = CGRect(x: 0, y: 0, width: 1000, height: 20 + 44 + 24)
             // to remove the navBar
         navBarCoverView.alpha = 0
          keyWindow.addSubview(navBarCoverView)
             
             //tabBar
             tabBarCoverView.backgroundColor = .black
-            tabBarCoverView.frame = CGRect(x: 0, y: keyWindow.frame.height - 49, width: 1000, height: 49)
+            tabBarCoverView.frame = CGRect(x: 0, y: keyWindow.frame.height - 49 - 40, width: 1000, height: 49 + 40)
             tabBarCoverView.alpha = 0
             keyWindow.addSubview(tabBarCoverView)
-            
         }
-        // to give me absolute coordinate that i want
+        
+        // to give me absolute coordinate that I want
         if let startingView = imageView.superview?.convert(imageView.frame, to: nil) {
             
             imageView.alpha = 0
@@ -128,7 +129,7 @@ class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLa
         
     }
     
-    func zoomOut() {
+    @objc func zoomOut() {
         if let startingView = imageView!.superview?.convert(imageView!.frame, to: nil) {
             UIView.animate(withDuration: 0.5, delay: 0 , usingSpringWithDamping: 1, initialSpringVelocity: 0.5, options: .curveEaseIn, animations: {
                 
