@@ -38,7 +38,6 @@ class tabBarController: UITabBarController {
         topBorder.backgroundColor = UIColor.rbg(red: 229, green: 231, blue: 235).cgColor
         tabBar.layer.addSublayer(topBorder)
         tabBar.clipsToBounds = true
-        
     }
     
      func viewControllersWithtitleAndIcons(title:String, icon: String) -> UINavigationController{
@@ -49,4 +48,5 @@ class tabBarController: UITabBarController {
         return viewController
     
     }
+    
 }

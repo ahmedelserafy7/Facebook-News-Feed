@@ -20,9 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
 
-         /*
-        window?.rootViewController = UINavigationController(rootViewController: feedController)
-        */
         window?.rootViewController = tabBarController()
         
         UITabBar.appearance().tintColor = UIColor.rbg(red: 70, green: 146, blue: 215)
@@ -31,7 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
-        application.statusBarStyle = .lightContent
         // Override point for customization after application launch.
         return true
     }

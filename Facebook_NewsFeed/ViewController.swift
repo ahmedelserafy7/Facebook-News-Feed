@@ -18,6 +18,7 @@ class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLa
     let cellID = "CellID"
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         Post.setupPostsAsItShouldBe()
         
          let memoryCapacity = 500 * 1024 * 1024
@@ -25,30 +26,21 @@ class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLa
         let urlCache = URLCache(memoryCapacity: memoryCapacity, diskCapacity: diskCapacity, diskPath: "diskPath")
         URLCache.shared = urlCache
 
-        
         navigationItem.title = "News Feed"
-       
         
         collectionView?.backgroundColor = UIColor(white:0.95, alpha: 1)
         collectionView?.register(FeedCell.self, forCellWithReuseIdentifier: cellID)
         collectionView?.alwaysBounceVertical = true
     }
-
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return posts.count
     }
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! FeedCell
         cell.post = posts[indexPath.row]
         cell.feedController = self
-       // cell.post?.statusImage = posts[indexPath.item].statusImage
-        
-  //    cell.post?.statusText = posts[indexPath.item].statusText
-        /*
-        if let name = posts[indexPath.item].name {
-            cell.nameLabel.text = name
-        }
- */
         return cell
     }
 
@@ -86,10 +78,10 @@ class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLa
         view.addSubview(blackBackgroundView)
         
         if let keyWindow = UIApplication.shared.keyWindow {
-            // navBar
+        // navBar
         navBarCoverView.backgroundColor = .black
         navBarCoverView.frame = CGRect(x: 0, y: 0, width: 1000, height: 20 + 44 + 24)
-            // to remove the navBar
+        // to remove the navBar
         navBarCoverView.alpha = 0
          keyWindow.addSubview(navBarCoverView)
             
@@ -124,12 +116,13 @@ class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLa
                 self.navBarCoverView.alpha = 1
                 self.tabBarCoverView.alpha = 1
             }, completion: nil)
-            
+            UIApplication.shared.keyWindow?.windowLevel = UIWindow.Level.statusBar
         }
         
     }
     
     @objc func zoomOut() {
+        
         if let startingView = imageView!.superview?.convert(imageView!.frame, to: nil) {
             UIView.animate(withDuration: 0.5, delay: 0 , usingSpringWithDamping: 1, initialSpringVelocity: 0.5, options: .curveEaseIn, animations: {
                 
@@ -139,6 +132,8 @@ class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLa
                 self.navBarCoverView.alpha = 0
                 self.tabBarCoverView.alpha = 0
                 
+                UIApplication.shared.keyWindow?.windowLevel = UIWindow.Level.normal
+                
             }, completion: { (completed) in
                 // to remove the zoomInView on the original one
                 self.zoomInView.removeFromSuperview()
@@ -146,7 +141,6 @@ class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLa
                 self.navBarCoverView.removeFromSuperview()
                 self.tabBarCoverView.removeFromSuperview()
                 self.imageView?.alpha = 1
-                
             })
           
         
