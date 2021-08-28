@@ -1,10 +1,10 @@
 # Facebook_NewsFeed
 
-<img src="https://i.imgur.com/nmXUVrq.png" ><img src="https://i.imgur.com/GPN8MY1.png">
-
 ## Description
 
-This project is a mocking app like **Facebook News Feed**.
+**Facebook News Feed** is an app simulates Facebook homepage.
+
+<img src="https://i.imgur.com/nmXUVrq.png" ><img src="https://i.imgur.com/GPN8MY1.png">
 
 ## Used Skills
 
